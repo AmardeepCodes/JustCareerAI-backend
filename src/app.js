@@ -12,8 +12,8 @@ import resumeAnalysisRoutes from "./routes/resumeAnalysisRoutes.js";
 const app = express();
 // allow frontend to talk to backend
 app.use(cors({
-     origin: "http://localhost:5173",
-      credentials: true
+    origin: ["http://localhost:5173", "https://just-career-ai-frontend-zeta.vercel.app"],
+    credentials: true
 }));
 
 app.use(express.json());
